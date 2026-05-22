@@ -7,7 +7,7 @@ on:
     branches:
       # Filter patterns cheat sheet:
       #   https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
-      - "example-branch/*"
+      - "filter-update/*"
 
   ### https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#pull_request
   pull_request:
@@ -18,7 +18,7 @@ on:
       - reopened
     paths:
       # include markdown files
-      # - "03-core-features/filters/*.md"
+      - "03-core-features/filters/**"
       # Exclude txt files
       - "!03-core-features/filters/*.txt"
 
