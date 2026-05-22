@@ -4,10 +4,10 @@ name: Triggering Events
 on:
   ### https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#push
   push:
-    branches:
+    # branches:
       # Filter patterns cheat sheet:
       #   https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
-      - "filter-update/*"
+      # - "filter-update/*"
 
   ### https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#pull_request
   pull_request:
@@ -16,12 +16,12 @@ on:
       - opened
       - synchronize
       - reopened
-    paths:
-      # include markdown files
-      - "03-core-features/filters/**"
-      # Exclude txt files
-      - "**/*.md"
-      - "!03-core-features/filters/*.txt"
+    # paths:
+      # # include markdown files
+      # - "03-core-features/filters/**"
+      # # Exclude txt files
+      # - "**/*.md"
+      # - "!03-core-features/filters/*.txt"
 
   ### https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule
   # schedule:
